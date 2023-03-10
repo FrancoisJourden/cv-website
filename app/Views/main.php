@@ -3,7 +3,7 @@
 <head>
     <!--    <meta charset="UTF-8">-->
     <title>François Jourden</title>
-    <meta name="description" content="The small framework with powerful features">
+    <meta name="description" content="Currently searching for an internship outside of France">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
     <link href="style.css" rel="stylesheet">
@@ -91,7 +91,7 @@
 
 
 <body class="font-Roboto dark:text-white dark:bg-gray-800">
-<header class="h-screen w-full flex bg-gray-800 text-white p-8">
+<header class="h-screen w-full flex bg-gray-800 text-white p-8 bg-[url('header_bg_blurred.png')] bg-cover backdrop-blur">
     <div id="darkmode-toggler" class="absolute left-10 top-10 border rounded p-1 hover:backdrop-contrast-50 hover:cursor-pointer active:backdrop-contrast-75 toggler-icons">
         <?php include("../public/icons/sun-moon.svg") ?>
         <?php include("../public/icons/sun.svg") ?>

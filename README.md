@@ -2,4 +2,4 @@
 
 Here's the source code of my CV's website.
 
-I made it using CodeIgniter 4 and tailwindcss 3.
+I made it using CodeIgniter 4 and tailwindCSS 3.
