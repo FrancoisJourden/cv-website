@@ -5,7 +5,7 @@
     <title>François Jourden</title>
     <meta name="description" content="Currently searching for an internship outside of France">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico">
     <link href="style.css" rel="stylesheet">
     <style>
         .main-page-icons svg {
