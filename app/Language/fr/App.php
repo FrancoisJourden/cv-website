@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'lang' => 'fr',
+
     'header_student' => "Etudiant ingénieur en informatique à l'",
     'header_developer' => 'Développeur fullStack en apprentissage chez',
 

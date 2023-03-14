@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="<?php echo lang('App.lang') ?>" class="scroll-smooth">
 <head>
     <!--    <meta charset="UTF-8">-->
     <title>François Jourden</title>
@@ -24,7 +24,6 @@
         }
     </style>
     <script>
-
         function toggleDarkMode() {
             switch (localStorage.theme) {
                 case 'light':
@@ -69,7 +68,7 @@
 
         function toggleLanguage() {
             let params = new URLSearchParams(window.location.search);
-            switch (params.get('locale')) {
+            switch (document.documentElement.lang) {
                 case 'fr':
                     params.set('locale', 'en');
                     break;
@@ -98,7 +97,7 @@
         <?php include("../public/icons/moon.svg") ?>
     </div>
     <div id="lang-toggler" class="absolute right-10 top-10 border rounded p-1 hover:backdrop-contrast-50 hover:cursor-pointer active:backdrop-contrast-75 toggler-icons">
-        <img src="icons/<?php echo locale_get_default(); ?>.svg" alt="lang"/>
+        <img src="icons/<?php echo lang('App.lang') ?>.svg" alt="lang">
     </div>
     <div class="self-center mx-auto align-middle flex flex-col text-center">
         <h1 class="text-6xl font-bold border border-2 rounded p-4">François Jourden</h1>
@@ -137,10 +136,10 @@
         <div class="w-fit mx-auto">
             <p>
                 <?php echo lang('App.about_sentence_1') ?>
-                <br/>
+                <br>
                 <?php echo lang('App.about_sentence_2') ?>
             </p>
-            <br/>
+            <br>
             <p><?php echo lang('App.about_sentence_3') ?></p>
             <br>
             <p><?php echo lang('App.about_sentence_4') ?></p>
@@ -166,25 +165,25 @@
             <div class="bg-blue-600 dark:bg-opacity-75 rounded p-4 text-white">
                 <h2 class="text-xl text-center">Web back-end</h2>
                 <ul class="w-fit mx-auto">
-                    <li class="">
+                    <li class="mb-2">
                         <span class="flex"><span class="mr-1"><?php include("../public/icons/brand-php.svg") ?></span><?php echo lang('App.skills_native_php') ?></span>
                         <ul class="pl-4 list-inside list-disc">
                             <li><?php echo lang('App.skills_work_school_personal') ?></li>
                         </ul>
                     </li>
-                    <li class="">
+                    <li class="mb-2">
                         <span class="flex"><span class="mr-1"><?php include("../public/icons/brand-laravel.svg") ?></span>Laravel</span>
                         <ul class="pl-4 list-inside list-disc">
                             <li><?php echo lang('App.skills_work') ?></li>
                         </ul>
                     </li>
-                    <li class="">
+                    <li class="mb-2">
                         <span class="flex"><span class="mr-1"><?php include("../public/icons/flame.svg") ?></span>CodeIgniter</span>
                         <ul class="pl-4 list-inside list-disc">
                             <li><?php echo lang('App.skills_school_personal') ?></li>
                         </ul>
                     </li>
-                    <li class="">
+                    <li class="mb-2">
                         <span class="flex"><span class="mr-1"><?php include("../public/icons/brand-npm.svg") ?></span>NodeJS</span>
                         <ul class="pl-4 list-inside list-disc">
                             <li><?php echo lang('App.skills_school_personal') ?></li>
@@ -225,25 +224,25 @@
                 <h2 class="text-xl text-center"><?php echo lang('App.skills_others') ?></h2>
                 <div class="w-fit mx-auto md:grid md:grid-cols-2 md:gap-8 md:mx-0 md:w-full">
                     <ul class="mx-auto md:pr-4">
-                        <li class="">
+                        <li class="mb-2">
                             <span class="flex"><span class="mr-1"><?php include("../public/icons/brand-git.svg") ?></span>GIT</span>
                             <ul class="pl-4 list-inside list-disc">
                                 <li><?php echo lang('App.skills_work_school_personal') ?></li>
                             </ul>
                         </li>
-                        <li class="">
+                        <li class="mb-2">
                             <span class="flex"><span class="mr-1"><?php include("../public/icons/brand-flutter.svg") ?></span>Flutter</span>
                             <ul class="pl-4 list-inside list-disc">
                                 <li><?php echo lang('App.skills_work_personal') ?></li>
                             </ul>
                         </li>
-                        <li class="">
+                        <li class="mb-2">
                             <span class="flex"><span class="mr-1"><?php include("../public/icons/database.svg") ?></span><?php echo lang('App.skills_database') ?></span>
                             <ul class="pl-4 list-inside list-disc">
                                 <li><?php echo lang('App.skills_work_school') ?></li>
                             </ul>
                         </li>
-                        <li class="">
+                        <li class="mb-2">
                             <span class="flex"><span class=""><?php include("../public/icons/brand-android.svg") ?></span><?php echo lang('App.skills_native_android') ?></span>
                             <ul class="pl-4 list-inside list-disc">
                                 <li><?php echo lang('App.skills_work_school') ?></li>
@@ -251,25 +250,25 @@
                         </li>
                     </ul>
                     <ul class="mx-auto md:pl-4">
-                        <li class="">
+                        <li class="mb-2">
                             <span class="flex"><span class="mr-1"><?php include("../public/icons/brand-debian.svg") ?></span>Linux</span>
                             <ul class="pl-4 list-inside list-disc">
                                 <li><?php echo lang('App.skills_work_school_personal') ?></li>
                             </ul>
                         </li>
-                        <li class="">
+                        <li class="mb-2">
                             <span class="flex"><span class="mr-1"><?php include("../public/icons/coffee.svg") ?></span>Java</span>
                             <ul class="pl-4 list-inside list-disc">
                                 <li><?php echo lang('App.skills_school_personal') ?></li>
                             </ul>
                         </li>
-                        <li class="">
+                        <li class="mb-2">
                             <span class="flex"><span class="mr-1"><?php include("../public/icons/brand-python.svg") ?></span>Python</span>
                             <ul class="pl-4 list-inside list-disc">
                                 <li><?php echo lang('App.skills_school') ?></li>
                             </ul>
                         </li>
-                        <li class="">
+                        <li class="mb-2">
                             <span class="flex"><span class="mr-1"><?php include("../public/icons/settings.svg") ?></span>Rust</span>
                             <ul class="pl-4 list-inside list-disc">
                                 <li><?php echo lang('App.skills_personal') ?></li>

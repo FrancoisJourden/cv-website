@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'lang' => 'en',
+
     'header_student' => "Engineer student in computer science at the",
     'header_developer' => 'Fullstack developer in apprenticeship at',
 
