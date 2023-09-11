@@ -130,6 +130,4 @@ nb-configuration.xml
 /phpunit*.xml
 /.phpunit.*.cache
 
-/writable/logs/
-/writable/
 /tests/*
